@@ -3,7 +3,7 @@
       <h1>人员在线列表</h1>
       <ul>
           <template v-for="userInfo of state.userList" :key="userInfo.id">
-              <li v-if="userInfo.username === state.username">{{userInfo.username}}(这是您)</li>
+              <li v-if="userInfo.username === state.username">{{userInfo.username}}(这是您哦)</li>
               <li v-else>
                   <a href="javascript:void(0)" @click="() => selectUser(userInfo)">{{ userInfo.username }}</a>
               </li>
